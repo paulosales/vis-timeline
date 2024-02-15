@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Timeline | Launchplan</title>
+
+    <style type="text/css">
+      body,
+      html {
+        font-family: sans-serif;
+      }
+    </style>
+
+    <script src="../../../dist/vis-timeline-graph2d.min.js"></script>
+    <link
+      href="../../../styles/vis-timeline-graph2d.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link
+      href="./timeline-custom-styles.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+  <body>
+    <p>
+      A launchplab sample timeline. You can move and zoom the timeline, and
+      select items.
+    </p>
+
+    <div id="visualization"></div>
+
+    <script type="module">
+      import { groups, items } from "./data.js";
+      import { itemTemplate } from "./templates.js";
+
+      const allowedTimelineTemplateHTMLAttributes = {
+        div: ["style", "class", "title"],
+        img: ["src"],
+      };
+
+      // Configuration for the Timeline
+      var options = {
+        showWeekScale: true,
+        template: itemTemplate,
+        xss: {
+          disabled: false,
+          filterOptions: {
+            whiteList: allowedTimelineTemplateHTMLAttributes,
+          },
+        },
+      };
+
+      const container = document.getElementById("visualization");
+
+      export const timeline = new vis.Timeline(
+        container,
+        new vis.DataSet(items),
+        groups,
+        options
+      );
+    </script>
+  </body>
+</html>
