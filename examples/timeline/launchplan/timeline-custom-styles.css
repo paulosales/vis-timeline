@@ -6,7 +6,7 @@
 .vis-ltr .vis-label.vis-nested-group.vis-group-level-1 .vis-inner {
   padding-left: 10px;
   width: 200px;
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
@@ -19,7 +19,7 @@
 .vis-ltr .vis-label.vis-nested-group.vis-group-level-2 .vis-inner {
   padding-left: 30px;
   width: 200px;
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 13px;
   font-weight: bold;
   font-stretch: normal;
@@ -30,7 +30,7 @@
 }
 
 .vis-labelset .vis-label .vis-inner {
-  font-family: 'PublicSansBold';
+  font-family: "PublicSansBold";
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
@@ -40,7 +40,7 @@
 }
 
 .vis-item {
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 15px;
   font-weight: bold;
   font-stretch: normal;
@@ -73,7 +73,7 @@
 }
 
 .vis-time-axis .vis-text {
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 14px;
   font-weight: 600;
   font-stretch: normal;
@@ -106,7 +106,7 @@
 }
 
 .vis-item-content .game-code {
-  font-family: 'Public Sans';
+  font-family: "Public Sans";
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
