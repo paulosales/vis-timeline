@@ -1,9 +1,9 @@
 {
-  "name": "vis-timeline",
-  "version": "0.0.0-no-version",
+  "name": "@pbl/vis-timeline",
+  "version": "1.0.0",
   "description": "Create a fully customizable, interactive timeline with items and ranges.",
   "homepage": "https://visjs.github.io/vis-timeline/",
-  "license": "(Apache-2.0 OR MIT)",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/visjs/vis-timeline.git"
@@ -45,9 +45,7 @@
     "generate-examples-index:graph2d": "generate-examples-index --config generate-examples-index-graph2d.json",
     "lint": "eslint {lib,test}/**/*.{m,}{j,t}s{x,}",
     "clean": "rimraf --glob \"{dist,esnext,peer,standalone,styles}/*\"",
-    "contributors:update": "git-authors-cli",
-    "preparepublish": "npm run contributors:update",
-    "prepublishOnly": "npm run contributors:update && npm run build",
+    "prepublishOnly": "npm run build",
     "prepare": "husky install"
   },
   "lint-staged": {
@@ -74,7 +72,6 @@
     "cpy-cli": "5.0.0",
     "eslint": "8.56.0",
     "gh-pages": "6.1.1",
-    "git-authors-cli": "1.0.49",
     "husky": "8.0.3",
     "jsdoc": "3.6.11",
     "jsdom": "23.2.0",
