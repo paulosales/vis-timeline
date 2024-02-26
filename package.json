@@ -1,5 +1,5 @@
 {
-  "name": "@pbl/vis-timeline",
+  "name": "lms-vis-timeline",
   "version": "1.0.0",
   "description": "Create a fully customizable, interactive timeline with items and ranges.",
   "homepage": "https://visjs.github.io/vis-timeline/",
